@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"description": "Package template for using node esm with typescript",
 	"license": "MIT",
-	"repository": "mvllow/ts-esm-template",
-	"funding": "https://github.com/mvllow/ts-esm-template?sponsor=1",
+	"repository": "mvllow/node-esm-with-typescript",
+	"funding": "https://github.com/mvllow/node-esm-with-typescript?sponsor=1",
 	"author": {
 		"name": "mvllow",
 		"email": "mvllow@icloud.com"
