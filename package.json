@@ -26,9 +26,6 @@
 	],
 	"types": "dist/source",
 	"keywords": [],
-	"dependencies": {
-		"meow": "^10.0.1"
-	},
 	"devDependencies": {
 		"@types/node": "^15.12.2",
 		"ava": "^3.15.0",
