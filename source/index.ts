@@ -7,4 +7,5 @@ function lib() {
 	console.log(`${__dirname}\nCiao bella`)
 }
 
+export default lib
 export { lib }
