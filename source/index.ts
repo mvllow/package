@@ -8,4 +8,3 @@ function lib() {
 }
 
 export default lib
-export { lib }
