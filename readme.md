@@ -1,12 +1,11 @@
-# node-esm-with-typescript
+# node-template
 
-Starting point for node esm packages with typescript
+> Minimal esm node package template
 
 ## Usage
 
 ```sh
-npx degit mvllow/node-esm-with-typescript
-cd node-esm-with-typescript
-pnpm install
-pnpm dev
+npx degit mvllow/node-template && cd node-template
+
+npm install
 ```

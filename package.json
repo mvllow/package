@@ -1,55 +1,37 @@
 {
-	"name": "node-esm-with-typescript",
+	"name": "node-template",
 	"version": "0.0.0",
-	"description": "Node module template with esm and typescript",
+	"description": "Node template for esm packages",
 	"license": "MIT",
-	"repository": "mvllow/node-esm-with-typescript",
+	"repository": "mvllow/node-template",
 	"funding": "https://github.com/sponsors/mvllow",
 	"author": {
 		"name": "mvllow",
 		"email": "mvllow@icloud.com"
 	},
 	"type": "module",
-	"exports": "./dist/index.js",
+	"exports": "./index.js",
 	"engines": {
 		"node": ">=12"
 	},
 	"scripts": {
 		"test": "ava",
-		"release": "np",
-		"build": "del-cli dist && tsc"
+		"release": "np"
 	},
 	"files": [
-		"dist"
+		"index.js"
 	],
-	"types": "dist",
 	"keywords": [],
 	"devDependencies": {
-		"@types/node": "^15.12.2",
 		"ava": "^3.15.0",
 		"del-cli": "^3.0.1",
 		"np": "^7.5.0",
-		"prettier": "^2.3.1",
-		"ts-node": "^10.0.0",
-		"typescript": "^4.3.2"
+		"prettier": "^2.3.1"
 	},
 	"prettier": {
+		"bracketSpacing": false,
 		"semi": false,
 		"singleQuote": true,
 		"useTabs": true
-	},
-	"ava": {
-		"files": [
-			"test/*"
-		],
-		"extensions": {
-			"ts": "module"
-		},
-		"nonSemVerExperiments": {
-			"configurableModuleFormat": true
-		},
-		"nodeArguments": [
-			"--loader=ts-node/esm"
-		]
 	}
 }
