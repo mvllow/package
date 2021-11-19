@@ -1,3 +1,8 @@
 import test from 'ava'
+import add from './index.js'
 
-test.todo("don't forget to write tests :)")
+test('main', (t) => {
+	t.is(add(0, 0), 0)
+	t.is(add(41, 68), 109)
+	t.is(add(-10, 20), 10)
+})
