@@ -1,10 +1,8 @@
-import {dirname} from 'path'
-import {fileURLToPath} from 'url'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
-
-function lib() {
-	console.log(`${__dirname}\nCiao bella`)
+/**
+ * @param a {number}
+ * @param b {number}
+ * @returns {number}
+ */
+export default function add(a, b) {
+	return a + b
 }
-
-export default lib
