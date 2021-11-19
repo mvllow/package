@@ -5,7 +5,7 @@
 ## Usage
 
 ```sh
-npx degit mvllow/node-template && cd node-template
+npx degit mvllow/node-template my-app
 
-npm install
+cd my-app && npm install
 ```
