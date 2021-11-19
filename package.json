@@ -15,7 +15,7 @@
 		"node": ">=12"
 	},
 	"scripts": {
-		"test": "ava",
+		"test": "xo && ava",
 		"release": "np"
 	},
 	"files": [
@@ -27,11 +27,15 @@
 		"del-cli": "^3.0.1",
 		"np": "^7.5.0",
 		"prettier": "^2.3.1"
+		"xo": "^0.46.4"
 	},
 	"prettier": {
 		"bracketSpacing": false,
 		"semi": false,
 		"singleQuote": true,
 		"useTabs": true
+	},
+	"xo": {
+		"prettier": true
 	}
 }
