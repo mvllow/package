@@ -1,11 +1,11 @@
-# node-template
+# package
 
-> Minimal esm node package template
+> Node template for esm packages with typescript
 
 ## Usage
 
 ```sh
-npx degit mvllow/node-template my-app
+npx degit mvllow/package my-app
 
 cd my-app && npm install
 ```
