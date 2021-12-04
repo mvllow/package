@@ -1,5 +1,5 @@
 import test from 'ava'
-import add from './index.js'
+import add from '../source/index.js'
 
 test('main', (t) => {
 	t.is(add(0, 0), 0)

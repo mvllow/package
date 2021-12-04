@@ -1,35 +1,42 @@
 {
-	"name": "node-template",
+	"name": "package",
 	"version": "0.0.0",
-	"description": "Node template for esm packages",
+	"description": "Node template for esm packages with typescript",
 	"license": "MIT",
-	"repository": "mvllow/node-template",
+	"repository": "mvllow/package",
 	"funding": "https://github.com/sponsors/mvllow",
 	"author": {
 		"name": "mvllow",
 		"email": "mvllow@icloud.com"
 	},
 	"type": "module",
-	"exports": "./index.js",
+	"exports": "./dist/index.js",
 	"engines": {
 		"node": ">=12"
 	},
 	"scripts": {
+		"build": "del-cli dist && tsc && npm test",
 		"test": "xo && ava",
-		"release": "np"
+		"release": "np",
+		"version": "npm run build"
 	},
 	"files": [
-		"index.js",
-		"index.d.ts"
+		"dist"
 	],
+	"types": "dist",
 	"keywords": [
-		"add"
+		"package"
 	],
 	"devDependencies": {
+		"@mvllow/tsconfig": "^0.1.0",
+		"@types/node": "^16.11.11",
 		"ava": "^3.15.0",
-		"np": "^7.5.0",
-		"prettier": "^2.4.1",
-		"xo": "^0.46.4"
+		"del-cli": "^4.0.1",
+		"np": "^7.6.0",
+		"prettier": "^2.5.1",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.2",
+		"xo": "^0.47.0"
 	},
 	"prettier": {
 		"bracketSpacing": false,
@@ -40,5 +47,16 @@
 	},
 	"xo": {
 		"prettier": true
+	},
+	"ava": {
+		"extensions": {
+			"ts": "module"
+		},
+		"nonSemVerExperiments": {
+			"configurableModuleFormat": true
+		},
+		"nodeArguments": [
+			"--loader=ts-node/esm"
+		]
 	}
 }
